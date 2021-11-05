@@ -1,5 +1,4 @@
-import { ModelParser, ModelParserFactory, ModelParsingOption, } from 'azure-iot-parser-node';
-import { ModelDict, ParsingError, ParsingException, } from 'azure-iot-parser-node/dist/src/parser';
+import { ModelParser, ModelParserFactory, ModelParsingOption, ModelDict, ParsingError} from 'azure-iot-parser-node';
 import FactoryModels from './dtdl-models/FactoryFloorInterface.json';
 
 function main() {    
@@ -16,8 +15,9 @@ const parseModelAsync = async () => {
       Object.entries(modelDict).forEach(([key, value]) => {
         console.log(`[Validated] ${key}`);
       });
+      console.log('\x1b[32m%s\x1b[0m', 'Parsing complete');
     })
-    .catch((reason: ParsingException) => {
+    .catch((reason: any) => {
       console.log('\x1b[31m%s\x1b[0m', 'Errors parsing file:');
       console.log('');
       reason.errors.forEach((value: ParsingError) => {

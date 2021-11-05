@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-iot-parser-node": "file:package/azure-iot-parser-node-0.0.1.tgz"
+    "@azure/digital-twins-parser": "file:package/azure-digital-twins-parser-1.0.0-beta.1.tgz",
+    "azure-iot-parser-node": "file:package/azure-digital-twins-parser-1.0.0-beta.1.tgz"
   },
   "devDependencies": {
     "@types/node": "^16.11.3",
