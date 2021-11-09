@@ -41,4 +41,4 @@ yarn start
 This builds and runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Click `F12` to open the browser dev tools console log.  you should see the results of the parser sample. To view the parser sample code, go to the `src\App.tsx` file.
+Click `F12` to open the browsers development tools and the console log. You should see the results of the parser sample. To view the parser sample code, go to the `src\App.tsx` file.
