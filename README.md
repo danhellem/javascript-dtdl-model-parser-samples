@@ -7,14 +7,14 @@ This project demonstrates use of the JavaScript DTDL parser. The npm package is 
 
 # Node - Getting started
 
-After you have cloned the repo and opened it, go to the `node-app` directory.
+After you have cloned the repo, go to the `node-app` directory.
 
-From the command line run `yarn install` to install the node modules
+From the command line run `yarn install` to install the node modules.
 
-Now build and run your sample
+Now build and run your sample.
 
 ```bash
-npm run build
+yarn build
 
 node dist\src\parse_file.js
 ```
@@ -28,4 +28,17 @@ parser_dir  | Parse and validates all models contained in a given directory
 
 # React - Getting started
 
-TBD
+After you have cloned the repo, go to the `react-app` directory.
+
+From the command line run `yarn install` to install the node modules.
+
+Run the sample.
+
+```bash
+yarn start
+```
+
+This builds and runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Click `F12` to open the browser dev tools console log.  you should see the results of the parser sample. To view the parser sample code, go to the `src\App.tsx` file.
